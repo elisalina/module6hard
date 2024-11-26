@@ -14,7 +14,7 @@ class Figure:
         return d and t
     def set_color(self, r, g, b):
         if self.__is_valid_color(r, g, b):
-            self.__color = [r, g, b]
+            self.__color = r, g, b
     def __is_valid_sides(self, *new_sides):
         for i in new_sides:
             if isinstance(i, int) and len(self.__sides) == len(new_sides) and i >=0:
